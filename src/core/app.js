@@ -31,8 +31,14 @@ angular
         SoundSystemProvider.setAudioLibraryData({
             theme: {
                 path: 'assets/music/ib_theme',
-                volume: 0.55,
+                volume: 0.4,
                 loop: true,
+                type: 'music'
+            },
+            jump: {
+                path: 'assets/music/jump',
+                volume: 0.55,
+                loop: false,
                 type: 'music'
             }
         });
