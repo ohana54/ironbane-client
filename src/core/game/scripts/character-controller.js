@@ -157,6 +157,9 @@ angular
 
             if (input.keyboard.isDown(input.KEYS.SPACE)) {
                 this.jump = true;
+
+                var soundSystem = this.world.getSystem('sound');
+                soundSystem.play('jump');
             }
 
             var inputVector = new THREE.Vector3();
