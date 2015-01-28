@@ -141,6 +141,9 @@ angular
                 });
             }
 
+            var soundSystem = $rootWorld.getSystem('sound');
+            soundSystem.play('theme');
+
             LevelLoader.load(options.level).then(function () {
                 var characterName = FantasyNameGenerator.generateName('mmo'),
                     characterSprite = 'assets/images/characters/prefab/' + _.sample(_.range(1, 11)) + '.png';
